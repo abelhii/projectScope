@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="projectScope">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Project Scope</h1>
+      </ion-header-bar>
+      <ion-content>
+      	<button id="autoscope" title="autoscope" href="#"><img src="img/autoscope.png" ></button><!--style="margin-left:35px; margin-right:35px"-->
+      	<button id="stethoscope" title="stethoscope" href="#" type="button"><img src="img/stethoscope.png"></button>
+      	<button id="thermometer" title="thermometer" href="#"><img src="img/thermometer.png"></button>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
